@@ -75,14 +75,14 @@ console.log(`High-Value Transactions: ${highValueTransactions}`); // logging the
 
 // Task 7 - Shopping Cart Tracker //
 
-function createCartTracker() {
+function createCartTracker() { // starting the function
    let cart = 0;
    return function(amount) {
-      cart += amount;
+      cart += amount; // adding to the first function
       return `$${cart}`;
    };
  }
  let total = createCartTracker();
 
- console.log(`Current Balance: ${total(20)}`);
- console.log(`Current Balance: ${total(35)}`);
+ console.log(`Current Balance: ${total(20)}`); // logging with the given value
+ console.log(`Current Balance: ${total(35)}`); // logging with the given value
