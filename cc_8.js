@@ -11,10 +11,10 @@ console.log(`Net Salary: $${calculateSalary(7000, 1000, 0.15)}`); // logging the
 
 // Task 2 - Product Price After Discount //
 
-let calculateDiscount = function(price, discountRate) {
-    let finalPrice = price - (price * discountRate);
-    return finalPrice.toFixed(2);
+let calculateDiscount = function(price, discountRate) { // starting a function
+    let finalPrice = price - (price * discountRate); // delcaring equation being used
+    return finalPrice.toFixed(2); // returning the output to two decimal places
 }
 
-console.log(`Final Price: $${calculateDiscount(100, 0.2)}`);
-console.log(`Final Price: $${calculateDiscount(250, 0.15)}`);
+console.log(`Final Price: $${calculateDiscount(100, 0.2)}`); // logging the calculation with the given values
+console.log(`Final Price: $${calculateDiscount(250, 0.15)}`); // logging the calculation with the given values
