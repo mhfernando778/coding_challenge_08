@@ -59,3 +59,15 @@ function calculateLoanPayment(principal, rate, time) { // starting function
  
   console.log(`Total Interest: $${calculateLoanPayment(1000, .05, 2)}`); // logging the calculation with the given values
   console.log(`Total Interest: $${calculateLoanPayment(5000, .07, 3)}`); // logging the calculation with the given values
+
+
+// Task 6 - Identifying Large Transaction // 
+
+let transactions = [200, 1500, 3200, 800, 2500];
+
+function filterLargeTransactions(transactions, filterFunction) {
+    return transactions.filter(filterFunction);
+}
+let highValueTransactions = filterLargeTransactions(transactions, amount => amount > 1000);
+
+console.log(`High-Value Transactions: ${highValueTransactions}`);
