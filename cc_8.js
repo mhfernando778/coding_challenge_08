@@ -29,5 +29,5 @@ const serviceType = { // the different service types and the fees for each one
     basic: .05
 };
 
-console.log(`Service Fee: $${calculateServiceFee(200, serviceType.premium).toFixed(2)}`);
-console.log(`Service Fee: $${calculateServiceFee(500, serviceType.standard).toFixed(2)}`);
+console.log(`Service Fee: $${calculateServiceFee(200, serviceType.premium).toFixed(2)}`); // logged the calculation with givven values
+console.log(`Service Fee: $${calculateServiceFee(500, serviceType.standard).toFixed(2)}`); // logged the calculation with givven values
