@@ -63,11 +63,11 @@ function calculateLoanPayment(principal, rate, time) { // starting function
 
 // Task 6 - Identifying Large Transaction // 
 
-let transactions = [200, 1500, 3200, 800, 2500];
+let transactions = [200, 1500, 3200, 800, 2500]; // an array of 5 values
 
-function filterLargeTransactions(transactions, filterFunction) {
+function filterLargeTransactions(transactions, filterFunction) { // starting function
     return transactions.filter(filterFunction);
 }
-let highValueTransactions = filterLargeTransactions(transactions, amount => amount > 1000);
+let highValueTransactions = filterLargeTransactions(transactions, amount => amount > 1000); // declaring the parameters
 
-console.log(`High-Value Transactions: ${highValueTransactions}`);
+console.log(`High-Value Transactions: ${highValueTransactions}`); // logging the expected values
