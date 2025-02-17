@@ -35,16 +35,16 @@ console.log(`Service Fee: $${calculateServiceFee(500, serviceType.standard).toFi
 
 // Task 4 - Car Rental Cost Calculation //
 
-const carType = {
+const carType = { // stating the daily rental prices
     economy: 40,
     standard: 60,
     luxury: 100
 };
 
-function calculateRentalCost(days, carType, insurance = false) {
-    let cost = days * carType + (insurance ? days * 20 : 0);
-    return cost.toFixed(2);
+function calculateRentalCost(days, carType, insurance = false) { // starting a function
+    let cost = days * carType + (insurance ? days * 20 : 0); // declaring the equation being used
+    return cost.toFixed(2); // returning the output to two decimal places
 }
 
-console.log(`Total Rental Cost: $${calculateRentalCost(3, carType.economy, true)}`);
-console.log(`Total Rental Cost: $${calculateRentalCost(5, carType.luxury, false)}`);
+console.log(`Total Rental Cost: $${calculateRentalCost(3, carType.economy, true)}`); // logging the calculation with the given values
+console.log(`Total Rental Cost: $${calculateRentalCost(5, carType.luxury, false)}`); // logging the calculation with the given values
