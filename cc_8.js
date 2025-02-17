@@ -90,10 +90,10 @@ function createCartTracker() { // starting the function
 
  // Task 8 - Savings Growth Projection //
 
- function calculateSavings(years, amount) {
+ function calculateSavings(years, amount) { // starting function to calculate projected savings
     if (years >= 10) return amount;
     return calculateSavings(years + 1, amount * 1.05);
 }
 
-console.log(`Projected Savings: $${calculateSavings(8, 1000).toFixed(2)}`);
-console.log(`Projected Savings: $${calculateSavings(5, 5000).toFixed(2)}`);
+console.log(`Projected Savings: $${calculateSavings(8, 1000).toFixed(2)}`); // logging the calculation
+console.log(`Projected Savings: $${calculateSavings(5, 5000).toFixed(2)}`); // logging the calculation
