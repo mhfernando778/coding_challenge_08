@@ -86,3 +86,14 @@ function createCartTracker() { // starting the function
 
  console.log(`Current Balance: ${total(20)}`); // logging with the given value
  console.log(`Current Balance: ${total(35)}`); // logging with the given value
+
+
+ // Task 8 - Savings Growth Projection //
+
+ function calculateSavings(years, amount) {
+    if (years >= 10) return amount;
+    return calculateSavings(years + 1, amount * 1.05);
+}
+
+console.log(`Projected Savings: $${calculateSavings(8, 1000).toFixed(2)}`);
+console.log(`Projected Savings: $${calculateSavings(5, 5000).toFixed(2)}`);
