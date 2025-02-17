@@ -48,3 +48,14 @@ function calculateRentalCost(days, carType, insurance = false) { // starting a f
 
 console.log(`Total Rental Cost: $${calculateRentalCost(3, carType.economy, true)}`); // logging the calculation with the given values
 console.log(`Total Rental Cost: $${calculateRentalCost(5, carType.luxury, false)}`); // logging the calculation with the given values
+
+
+// Task 5 - Loan Payment Calculation //
+
+function calculateLoanPayment(principal, rate, time) {
+    let totalPayment = principal + (principal * rate * time);
+    return totalPayment.toFixed(2);
+  }
+ 
+  console.log(`Total Interest: $${calculateLoanPayment(1000, .05, 2)}`);
+  console.log(`Total Interest: $${calculateLoanPayment(5000, .07, 3)}`);
