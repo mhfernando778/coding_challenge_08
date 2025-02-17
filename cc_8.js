@@ -52,10 +52,10 @@ console.log(`Total Rental Cost: $${calculateRentalCost(5, carType.luxury, false)
 
 // Task 5 - Loan Payment Calculation //
 
-function calculateLoanPayment(principal, rate, time) {
-    let totalPayment = principal + (principal * rate * time);
-    return totalPayment.toFixed(2);
+function calculateLoanPayment(principal, rate, time) { // starting function
+    let totalPayment = principal + (principal * rate * time); // declaring what equation will be used
+    return totalPayment.toFixed(2); // return the output to two decimal places
   }
  
-  console.log(`Total Interest: $${calculateLoanPayment(1000, .05, 2)}`);
-  console.log(`Total Interest: $${calculateLoanPayment(5000, .07, 3)}`);
+  console.log(`Total Interest: $${calculateLoanPayment(1000, .05, 2)}`); // logging the calculation with the given values
+  console.log(`Total Interest: $${calculateLoanPayment(5000, .07, 3)}`); // logging the calculation with the given values
