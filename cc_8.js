@@ -7,3 +7,14 @@ function calculateSalary(baseSalary, bonus, taxRate) { // starting a function to
 
 console.log(`Net Salary: $${calculateSalary(5000, 500, 0.1)}`); // logging the calculation with given values
 console.log(`Net Salary: $${calculateSalary(7000, 1000, 0.15)}`); // logging the calculation with given values
+
+
+// Task 2 - Product Price After Discount //
+
+let calculateDiscount = function(price, discountRate) {
+    let finalPrice = price - (price * discountRate);
+    return finalPrice.toFixed(2);
+}
+
+console.log(`Final Price: $${calculateDiscount(100, 0.2)}`);
+console.log(`Final Price: $${calculateDiscount(250, 0.15)}`);
