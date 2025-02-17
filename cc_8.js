@@ -71,3 +71,18 @@ function filterLargeTransactions(transactions, filterFunction) { // starting fun
 let highValueTransactions = filterLargeTransactions(transactions, amount => amount > 1000); // declaring the parameters
 
 console.log(`High-Value Transactions: ${highValueTransactions}`); // logging the expected values
+
+
+// Task 7 - Shopping Cart Tracker //
+
+function createCartTracker() {
+   let cart = 0;
+   return function(amount) {
+      cart += amount;
+      return `$${cart}`;
+   };
+ }
+ let total = createCartTracker();
+
+ console.log(`Current Balance: ${total(20)}`);
+ console.log(`Current Balance: ${total(35)}`);
